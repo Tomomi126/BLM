@@ -1,1 +1,668 @@
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><style type="text/css">ol{margin:0;padding:0}table td,table th{padding:0}.c1{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c0{padding-top:0pt;padding-bottom:0pt;line-height:1.15;text-align:left}.c3{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c2{height:11pt}.title{padding-top:24pt;color:#000000;font-weight:700;font-size:36pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:18pt;color:#666666;font-size:24pt;padding-bottom:4pt;font-family:"Georgia";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:24pt;color:#000000;font-weight:700;font-size:24pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-weight:700;font-size:18pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:14pt;color:#000000;font-weight:700;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:12pt;color:#000000;font-weight:700;font-size:12pt;padding-bottom:2pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:11pt;color:#000000;font-weight:700;font-size:11pt;padding-bottom:2pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:10pt;color:#000000;font-weight:700;font-size:10pt;padding-bottom:2pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}</style></head><body class="c3 doc-content"><p class="c0"><span class="c1">&lt;!DOCTYPE html&gt;</span></p><p class="c0"><span class="c1">&lt;html lang=&quot;vi&quot;&gt;</span></p><p class="c0"><span class="c1">&lt;head&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;title&gt;Thanh Ngang &#272;a Ng&ocirc;n Ng&#7919;&lt;/title&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;style&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Reset CSS c&#417; b&#7843;n */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; * {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-sizing: border-box;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Thanh ngang tr&ecirc;n c&ugrave;ng */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; #top-bar {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: white; /* N&#7873;n tr&#7855;ng */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: black; /* Ch&#7919; m&agrave;u &#273;en */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 10px 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between; /* C&aacute;c ph&#7847;n t&#7917; c&aacute;ch &#273;&#7873;u nhau */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center; /* C&#259;n gi&#7919;a theo chi&#7873;u d&#7885;c */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: Arial, sans-serif;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 14px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-bottom: 1px solid #ddd; /* &#272;&#432;&#7901;ng vi&#7873;n d&#432;&#7899;i */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Ng&agrave;y th&aacute;ng &#7903; b&ecirc;n tr&aacute;i */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .topbar-date {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: bold;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Ph&#7847;n ch&#7885;n ng&ocirc;n ng&#7919; */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .topbar-lang {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 15px; /* Kho&#7843;ng c&aacute;ch gi&#7919;a c&aacute;c ng&ocirc;n ng&#7919; */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .topbar-lang a {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: black;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: bold;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 5px 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: background 0.3s;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cursor: pointer;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .topbar-lang img {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 14px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-right: 8px; /* Kho&#7843;ng c&aacute;ch gi&#7919;a c&#7901; v&agrave; ch&#7919; */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 2px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .topbar-lang a:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #f0f0f0; /* Hi&#7879;u &#7913;ng hover */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Ph&#7847;n n&#7897;i dung trang */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .content {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 18px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/style&gt;</span></p><p class="c0"><span class="c1">&lt;/head&gt;</span></p><p class="c0"><span class="c1">&lt;body&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Thanh ngang tr&ecirc;n c&ugrave;ng --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div id=&quot;top-bar&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Ng&agrave;y th&aacute;ng --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;topbar-date&quot; id=&quot;current-date&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Ng&agrave;y th&aacute;ng s&#7869; t&#7921; &#273;&#7897;ng c&#7853;p nh&#7853;t --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Ch&#7885;n ng&ocirc;n ng&#7919; --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;topbar-lang&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a onclick=&quot;changeLanguage(&#39;vi&#39;)&quot; id=&quot;lang-vi&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg&quot; alt=&quot;VN&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span id=&quot;text-vi&quot;&gt;Ti&#7871;ng Vi&#7879;t&lt;/span&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a onclick=&quot;changeLanguage(&#39;en&#39;)&quot; id=&quot;lang-en&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg&quot; alt=&quot;EN&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span id=&quot;text-en&quot;&gt;English&lt;/span&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- N&#7897;i dung trang --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;head&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;title&gt;D&#7843;i n&#7873;n k&eacute;o d&agrave;i&lt;/title&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;style&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; body {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: Arial, sans-serif;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .full-width-section {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: #2c3e50; /* Xanh t&iacute;m than */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 50px 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100vw; /* Chi&#7873;u r&#7897;ng to&agrave;n m&agrave;n h&igrave;nh */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/style&gt;</span></p><p class="c0"><span class="c1">&lt;/head&gt;</span></p><p class="c0"><span class="c1">&lt;body&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;full-width-section&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;h1 id=&quot;heading&quot; class=&quot;highlight&quot;&gt;Ch&agrave;o m&#7915;ng b&#7841;n &#273;&#7871;n v&#7899;i trang web c&#7911;a ch&uacute;ng t&ocirc;i!&lt;/h1&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p id=&quot;description&quot; class=&quot;highlight&quot;&gt;&#272;&acirc;y l&agrave; m&#7897;t trang web th&#7917; nghi&#7879;m gi&uacute;p b&#7841;n &#273;&#7893;i ng&ocirc;n ng&#7919; gi&#7919;a Ti&#7871;ng Vi&#7879;t v&agrave; Ti&#7871;ng Anh.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p id=&quot;more-info&quot; class=&quot;highlight&quot;&gt;Nh&#7845;n v&agrave;o l&aacute; c&#7901; &#273;&#7875; thay &#273;&#7893;i ng&ocirc;n ng&#7919; hi&#7875;n th&#7883;.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;/body&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Script c&#7853;p nh&#7853;t ng&agrave;y th&aacute;ng &amp; &#273;&#7893;i ng&ocirc;n ng&#7919; --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;script&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; function updateDate(lang = &#39;vi&#39;) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const dateElement = document.getElementById(&quot;current-date&quot;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const today = new Date();</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const optionsVI = { weekday: &#39;long&#39;, day: &#39;2-digit&#39;, month: &#39;long&#39;, year: &#39;numeric&#39; };</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const optionsEN = { weekday: &#39;long&#39;, day: &#39;2-digit&#39;, month: &#39;long&#39;, year: &#39;numeric&#39; };</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (lang === &#39;en&#39;) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const days = {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;Ch&#7911; Nh&#7853;t&quot;: &quot;Sunday&quot;, &quot;Th&#7913; Hai&quot;: &quot;Monday&quot;, &quot;Th&#7913; Ba&quot;: &quot;Tuesday&quot;, &quot;Th&#7913; T&#432;&quot;: &quot;Wednesday&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;Th&#7913; N&#259;m&quot;: &quot;Thursday&quot;, &quot;Th&#7913; S&aacute;u&quot;: &quot;Friday&quot;, &quot;Th&#7913; B&#7843;y&quot;: &quot;Saturday&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; };</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const months = {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;Th&aacute;ng M&#7897;t&quot;: &quot;January&quot;, &quot;Th&aacute;ng Hai&quot;: &quot;February&quot;, &quot;Th&aacute;ng Ba&quot;: &quot;March&quot;, &quot;Th&aacute;ng T&#432;&quot;: &quot;April&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;Th&aacute;ng N&#259;m&quot;: &quot;May&quot;, &quot;Th&aacute;ng S&aacute;u&quot;: &quot;June&quot;, &quot;Th&aacute;ng B&#7843;y&quot;: &quot;July&quot;, &quot;Th&aacute;ng T&aacute;m&quot;: &quot;August&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;Th&aacute;ng Ch&iacute;n&quot;: &quot;September&quot;, &quot;Th&aacute;ng M&#432;&#7901;i&quot;: &quot;October&quot;, &quot;Th&aacute;ng M&#432;&#7901;i M&#7897;t&quot;: &quot;November&quot;, &quot;Th&aacute;ng M&#432;&#7901;i Hai&quot;: &quot;December&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; };</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; let dateStr = today.toLocaleDateString(&#39;vi-VN&#39;, optionsVI);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Object.keys(days).forEach(vn =&gt; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dateStr = dateStr.replace(vn, days[vn]);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Object.keys(months).forEach(vn =&gt; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dateStr = dateStr.replace(vn, months[vn]);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dateElement.textContent = dateStr;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dateElement.textContent = today.toLocaleDateString(&#39;vi-VN&#39;, optionsVI);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; updateDate(); // G&#7885;i h&agrave;m c&#7853;p nh&#7853;t khi trang t&#7843;i</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; const translations = {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; vi: {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; heading: &quot;Ch&agrave;o m&#7915;ng b&#7841;n &#273;&#7871;n v&#7899;i trang web c&#7911;a ch&uacute;ng t&ocirc;i!&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; description: &quot;&#272;&acirc;y l&agrave; m&#7897;t trang web th&#7917; nghi&#7879;m gi&uacute;p b&#7841;n &#273;&#7893;i ng&ocirc;n ng&#7919; gi&#7919;a Ti&#7871;ng Vi&#7879;t v&agrave; Ti&#7871;ng Anh.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; moreInfo: &quot;Nh&#7845;n v&agrave;o l&aacute; c&#7901; &#273;&#7875; thay &#273;&#7893;i ng&ocirc;n ng&#7919; hi&#7875;n th&#7883;.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; langVi: &quot;Ti&#7871;ng Vi&#7879;t&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; langEn: &quot;English&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; en: {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; heading: &quot;Welcome to our website!&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; description: &quot;This is a demo website that allows you to switch between Vietnamese and English.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; moreInfo: &quot;Click on the flag to change the display language.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; langVi: &quot;Vietnamese&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; langEn: &quot;English&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; };</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; function changeLanguage(lang) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&quot;heading&quot;).textContent = translations[lang].heading;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&quot;description&quot;).textContent = translations[lang].description;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&quot;more-info&quot;).textContent = translations[lang].moreInfo;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&quot;text-vi&quot;).textContent = translations[lang].langVi;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&quot;text-en&quot;).textContent = translations[lang].langEn;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; updateDate(lang);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/script&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;/body&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;style&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Reset CSS */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; * {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-sizing: border-box;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Thanh menu ngang */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .navbar {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: black; /* M&agrave;u n&#7873;n &#273;en */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 15px 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: Arial, sans-serif;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .navbar ul {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; list-style: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .navbar ul li {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: relative;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0 15px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .navbar ul li a {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 12px 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: block;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 16px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: 0.3s;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: black;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .navbar ul li a:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #0056b3; /* M&agrave;u xanh d&#432;&#417;ng khi hover */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Dropdown menu (&#7849;n ban &#273;&#7847;u) */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .dropdown {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: absolute;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: black;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; top: 50px; /* Hi&#7879;n ngay d&#432;&#7899;i menu */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; left: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 200px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; z-index: 1000;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 10px 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; opacity: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: opacity 0.3s ease-in-out;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .dropdown li {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .dropdown li a {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: block;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: black;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: left;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .dropdown li a:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #ffcc00; /* &#272;&#7893;i m&agrave;u ch&#7919; khi hover v&agrave;o m&#7909;c con */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Hi&#7875;n th&#7883; menu con khi c&oacute; class &#39;show&#39; */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .dropdown.show {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: block;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; opacity: 1;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/style&gt;</span></p><p class="c0"><span class="c1">&lt;/head&gt;</span></p><p class="c0"><span class="c1">&lt;body&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Thanh menu ngang --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;nav class=&quot;navbar&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;ul&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li onmouseenter=&quot;showMenu(&#39;menu1&#39;)&quot; onmouseleave=&quot;hideMenu(&#39;menu1&#39;)&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;B&#7840;O L&#7920;C M&#7840;NG &#9660;&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul class=&quot;dropdown&quot; id=&quot;menu1&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;B&oacute;ng t&#7889;i m&#7841;ng x&atilde; h&#7897;i: C&acirc;u chuy&#7879;n v&#7873; b&#7841;o l&#7921;c t&#7915; xa&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&#272;&#7883;nh ngh&#297;a&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Th&#7889;ng k&ecirc;&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/ul&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li onmouseenter=&quot;showMenu(&#39;menu2&#39;)&quot; onmouseleave=&quot;hideMenu(&#39;menu2&#39;)&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;NGUY&Ecirc;N NH&Acirc;N &#9660;&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul class=&quot;dropdown&quot; id=&quot;menu2&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;M&#7863;t N&#7841; K&#7867; T&#7845;n C&ocirc;ng: Danh t&iacute;nh &ldquo;anh h&ugrave;ng&rdquo; b&agrave;n ph&iacute;m&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&#272;&#7863;c &#273;i&#7875;m c&#7911;a m&#7841;ng x&atilde; h&#7897;i&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;G&oacute;c nh&igrave;n c&#7911;a &ldquo;ng&#432;&#7901;i qua &#273;&#432;&#7901;ng&rdquo;&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li onmouseenter=&quot;showMenu(&#39;menu3&#39;)&quot; onmouseleave=&quot;hideMenu(&#39;menu3&#39;)&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;H&#7852;U QU&#7842; &#9660;&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul class=&quot;dropdown&quot; id=&quot;menu3&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&#272;&#7889;i v&#7899;i n&#7841;n nh&acirc;n&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&#272;&#7889;i v&#7899;i k&#7867; b&#7855;t n&#7841;t&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&#272;&#7889;i v&#7899;i x&atilde; h&#7897;i&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt;</span></p><p class="c0"><span class="c1">&lt;li onmouseenter=&quot;showMenu(&#39;menu4&#39;)&quot; onmouseleave=&quot;hideMenu(&#39;menu4&#39;)&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;GI&#7842;I PH&Aacute;P &#9660;&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul class=&quot;dropdown&quot; id=&quot;menu4&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Gi&#7843;i ph&aacute;p ph&ograve;ng tr&aacute;nh b&#7841;o l&#7921;c m&#7841;ng&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Gi&#7843;i ph&aacute;p khi b&#7841;o l&#7921;c m&#7841;ng x&#7843;y ra&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt;</span></p><p class="c0"><span class="c1">&lt;li onmouseenter=&quot;showMenu(&#39;menu5&#39;)&quot; onmouseleave=&quot;hideMenu(&#39;menu5&#39;)&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;L&#7900;I K&#7870;T &#9660;&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul class=&quot;dropdown&quot; id=&quot;menu5&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;K&#7871;t lu&#7853;n&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Th&ocirc;ng &#273;i&#7879;p&lt;/a&gt;&lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/nav&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;script&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; function showMenu(menuId) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(menuId).classList.add(&quot;show&quot;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; function hideMenu(menuId) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(menuId).classList.remove(&quot;show&quot;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/script&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;/body&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;style&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; body {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: Arial, sans-serif;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; line-height: 1.6;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Container ch&iacute;nh &#273;&#7875; chia &#273;&ocirc;i */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .container {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: flex-start;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 1200px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 20px auto;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 30px; /* Kho&#7843;ng c&aacute;ch gi&#7919;a 2 ph&#7847;n */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; line-height: 1.8;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; p {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 16px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 15px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; } &nbsp; &nbsp;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Ph&#7847;n tr&aacute;i: N&#7897;i dung b&#7841;o l&#7921;c m&#7841;ng */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .section { margin-bottom: 20px; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .baolucman { flex: 3; padding: 20px; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Ph&#7847;n ph&#7843;i: Danh s&aacute;ch s&#7921; ki&#7879;n */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .event-container {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex: 1;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 8px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .event-header {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 18px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: bold;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #2c3e50;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* D&ograve;ng timeline b&ecirc;n tr&aacute;i */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .event-list {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-left: 4px solid #ddd;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding-left: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-top: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* M&#7895;i m&#7909;c s&#7921; ki&#7879;n */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .event-item {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: relative;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Ch&#7845;m tr&ograve;n &#273;&aacute;nh d&#7845;u */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .event-item::before {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; content: &quot;&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #ddd;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 50%;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: absolute;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; left: -27px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; top: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: 0.3s;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Hi&#7879;u &#7913;ng khi di chu&#7897;t v&agrave;o ch&#7845;m tr&ograve;n */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .event-item:hover::before {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: blue; /* &#272;&#7893;i m&agrave;u sang xanh d&#432;&#417;ng */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Ng&agrave;y th&aacute;ng */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .event-date {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 14px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: gray;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: bold;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Ti&ecirc;u &#273;&#7873; s&#7921; ki&#7879;n */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .event-title {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 16px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: bold;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-top: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; line-height: 1.4;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: black;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: inline-block;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: 0.3s;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Hi&#7879;u &#7913;ng khi di chu&#7897;t v&agrave;o ti&ecirc;u &#273;&#7873; */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .event-title:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: red; /* &#272;&#7893;i m&agrave;u sang &#273;&#7887; */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; </span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/style&gt;</span></p><p class="c0"><span class="c1">&lt;/head&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;div class=&quot;container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Ph&#7847;n tr&aacute;i: B&#7841;o L&#7921;c M&#7841;ng --&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;div class=&quot;baolucman&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;B&oacute;ng T&#7889;i M&#7841;ng X&atilde; H&#7897;i: C&acirc;u Chuy&#7879;n V&#7873; B&#7841;o L&#7921;c T&#7915; Xa&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;V&agrave;i n&#259;m v&#7873; tr&#432;&#7899;c, c&acirc;u chuy&#7879;n &#273;au l&ograve;ng c&#7911;a &lt;strong&gt;Sulli&lt;/strong&gt;, m&#7897;t trong nh&#7919;ng ng&ocirc;i sao n&#7893;i b&#7853;t c&#7911;a nh&oacute;m nh&#7841;c &lt;strong&gt;f(x)&lt;/strong&gt;, l&agrave; m&#7897;t minh ch&#7913;ng r&otilde; r&agrave;ng nh&#7845;t cho s&#7921; t&agrave;n ph&aacute; m&agrave; b&#7841;o l&#7921;c m&#7841;ng c&oacute; th&#7875; mang l&#7841;i. D&ugrave; &#273;&#432;&#7907;c y&ecirc;u m&#7871;n v&igrave; t&agrave;i n&#259;ng v&agrave; nhan s&#7855;c, &lt;strong&gt;Sulli (Choi Jin-ri)&lt;/strong&gt; ph&#7843;i ch&#7883;u &#273;&#7921;ng ch&#7881; tr&iacute;ch v&agrave; ch&#7871; gi&#7877;u t&#7915; c&#7897;ng &#273;&#7891;ng m&#7841;ng v&igrave; c&#7855;t t&oacute;c ng&#7855;n, kh&ocirc;ng trang &#273;i&#7875;m, hay th&#7853;m ch&iacute; l&agrave; vi&#7879;c &#273;&#259;ng t&#7843;i nh&#7919;ng b&#7913;c &#7843;nh v&agrave; video t&#7921; do th&#7875; hi&#7879;n b&#7843;n th&acirc;n.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;M&#7863;c d&ugrave; &#273;&atilde; l&ecirc;n ti&#7871;ng k&ecirc;u g&#7885;i s&#7921; thay &#273;&#7893;i, Sulli v&#7851;n b&#7883; c&ocirc; l&#7853;p, tuy&#7879;t v&#7885;ng v&agrave; cu&#7889;i c&ugrave;ng &#273;&atilde; ch&#7885;n r&#7901;i xa th&#7871; gi&#7899;i n&agrave;y. C&oacute; th&#7875; th&#7845;y, c&acirc;u chuy&#7879;n c&#7911;a Sulli l&agrave; l&#7901;i c&#7843;nh t&#7881;nh v&#7873; t&aacute;c h&#7841;i c&#7911;a thi&#7871;u ki&#7875;m so&aacute;t tr&ecirc;n m&#7841;ng, n&#417;i nh&#7919;ng ng&ocirc;n t&#7915; c&oacute; th&#7875; g&acirc;y t&#7893;n th&#432;&#417;ng s&acirc;u s&#7855;c &#273;&#7871;n tr&aacute;i tim, t&acirc;m h&#7891;n c&#7911;a m&#7897;t con ng&#432;&#7901;i.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Ph&#7847;n ph&#7843;i: S&#7921; ki&#7879;n --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;event-container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;event-header&quot;&gt;S&#7920; KI&#7878;N&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;event-list&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;event-item&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;event-date&quot;&gt;Th&aacute;ng S&aacute;u 6, 2025&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;https://hoangthanhthanglong.vn/event1&quot; class=&quot;event-title&quot;&gt;L&#7877; D&acirc;ng H&#432;&#417;ng, Khai Xu&acirc;n &#7844;t T&#7925; 2025 t&#7841;i Ho&agrave;ng Th&agrave;nh Th&#259;ng Long&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;event-item&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;event-date&quot;&gt;Th&aacute;ng M&#7897;t 22, 2025&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;https://hoangthanhthanglong.vn/event2&quot; class=&quot;event-title&quot;&gt;T&aacute;i Hi&#7879;n Nghi L&#7877; Cung &#272;&igrave;nh X&#432;a t&#7841;i Ho&agrave;ng Th&agrave;nh Th&#259;ng Long&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;event-item&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;event-date&quot;&gt;Th&aacute;ng M&#432;&#7901;i Hai 25, 2024&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;https://hoangthanhthanglong.vn/event3&quot; class=&quot;event-title&quot;&gt;L&#7877; B&agrave;n Giao &#272;&#7845;t Qu&#7889;c Ph&ograve;ng, K&#7923; &#272;&agrave;i (C&#7897;t C&#7901; H&agrave; N&#7897;i)&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;style&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; body {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: &#39;Poppins&#39;, sans-serif;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 150vh;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .banner {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(to right, #ffc0cb, #ffffff);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px 40px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 1200px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: #ffffff;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .quote {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 22px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 600;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 250px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #555;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-left: 4px solid #ff6b6b;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding-left: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex: 2;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: auto;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex-direction: column;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: center;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .cta-button {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #ff4b7b;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 12px 24px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 16px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: bold;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: 0.3s;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: 2px solid white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .cta-button:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: #ff4b7b;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/style&gt;</span></p><p class="c0"><span class="c1">&lt;/head&gt;</span></p><p class="c0"><span class="c1">&lt;body&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;banner&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;quote&quot;&gt;H&atilde;y bi&#7871;n Internet tr&#7903; th&agrave;nh n&#417;i an to&agrave;n cho m&#7885;i ng&#432;&#7901;i d&ugrave;ng!&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot; class=&quot;cta-button&quot;&gt;H&agrave;nh &#273;&#7897;ng ngay!&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&lt;/body&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;style&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; /* Thi&#7871;t l&#7853;p chung cho footer */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .site-footer {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: #2c2f34; /* N&#7873;n m&agrave;u x&aacute;m */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #ffffff; /* M&agrave;u ch&#7919; tr&#7855;ng */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: Arial, sans-serif;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .footer-container {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 1200px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: auto;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex-wrap: wrap;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .footer-column {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 30%;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: left;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .footer-column h3 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 18px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .footer-column p, .footer-column a {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 14px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; line-height: 1.6;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #ffffff;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .footer-bottom {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 15px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 14px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-top: 1px solid #444;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .back-to-top {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: fixed;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bottom: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; right: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: #ff9800;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 10px 15px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cursor: pointer;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 16px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; @media (max-width: 768px) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .footer-container {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex-direction: column;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .footer-column {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/style&gt;</span></p><p class="c0"><span class="c1">&lt;/head&gt;</span></p><p class="c0"><span class="c1">&lt;body&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;!-- Footer --&gt;</span></p><p class="c0"><span class="c1">&lt;footer class=&quot;site-footer&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;footer-container&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- C&#7897;t 1: Th&ocirc;ng tin t&#7893; ch&#7913;c --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;footer-column&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;TRUNG T&Acirc;M B&#7842;O T&#7890;N DI S&#7842;N TH&#258;NG LONG &ndash; H&Agrave; N&#7896;I&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Quy&#7871;t &#273;&#7883;nh th&agrave;nh l&#7853;p s&#7889;: 3855/Q&#272;-UBND ng&agrave;y 01/9/2006 c&#7911;a &#7910;y ban Nh&acirc;n d&acirc;n Tp. H&agrave; N&#7897;i&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&#272;&#7883;a ch&#7881;: S&#7889; 19C &#273;&#432;&#7901;ng Ho&agrave;ng Di&#7879;u, P. &#272;i&#7879;n Bi&ecirc;n Ph&#7911;, Q. Ba &#272;&igrave;nh, TP. H&agrave; N&#7897;i&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- C&#7897;t 2: Th&ocirc;ng tin li&ecirc;n h&#7879; --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;footer-column&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;LI&Ecirc;N H&#7878;&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&#128222; Li&ecirc;n h&#7879; tham quan: &lt;strong&gt;+84-437345427&lt;/strong&gt;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&#128222; &#272;&#7863;t v&eacute; tour &#273;&ecirc;m: &lt;strong&gt;+84-848455222&lt;/strong&gt;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&#128224; Fax: +84-4-37345926&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&#128233; Email: &lt;a href=&quot;mailto:info@hoangthanhthanglong.vn&quot;&gt;info@hoangthanhthanglong.vn&lt;/a&gt;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- C&#7897;t 3: Th&#7889;ng k&ecirc; truy c&#7853;p --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;footer-column&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;TH&#7888;NG K&Ecirc; TRUY C&#7852;P&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&#128065;&#65039; L&#432;&#7907;t xem h&ocirc;m nay: &lt;strong id=&quot;views-today&quot;&gt;0&lt;/strong&gt;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&#128202; T&#7893;ng truy c&#7853;p: &lt;strong id=&quot;total-visits&quot;&gt;0&lt;/strong&gt;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&#128065;&#65039; L&#432;&#7907;t xem trang: &lt;strong id=&quot;page-views&quot;&gt;0&lt;/strong&gt;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- B&#7843;n quy&#7873;n --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;footer-bottom&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; B&#7843;n quy&#7873;n &copy; 2025 HOANGTHANHTHANGLONG.VN thu&#7897;c Trung t&acirc;m B&#7843;o t&#7891;n di s&#7843;n Th&#259;ng Long - H&agrave; N&#7897;i.</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&lt;/footer&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;!-- N&uacute;t quay l&#7841;i &#273;&#7847;u trang --&gt;</span></p><p class="c0"><span class="c1">&lt;button class=&quot;back-to-top&quot; onclick=&quot;scrollToTop()&quot;&gt;&#9650; L&ecirc;n &#273;&#7847;u trang&lt;/button&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;script&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; function updatePageViews() {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; let today = new Date().toDateString(); // Ng&agrave;y hi&#7879;n t&#7841;i</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; let storedDate = localStorage.getItem(&quot;lastVisitDate&quot;); // L&#7847;n truy c&#7853;p cu&#7889;i</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; let viewsToday = parseInt(localStorage.getItem(&quot;viewsToday&quot;)) || 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; let totalVisits = parseInt(localStorage.getItem(&quot;totalVisits&quot;)) || 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; let pageViews = parseInt(localStorage.getItem(&quot;pageViews&quot;)) || 0;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; if (storedDate !== today) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // N&#7871;u ng&agrave;y &#273;&atilde; thay &#273;&#7893;i, reset &quot;L&#432;&#7907;t xem h&ocirc;m nay&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; viewsToday = 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; localStorage.setItem(&quot;lastVisitDate&quot;, today);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; viewsToday++; // T&#259;ng l&#432;&#7907;t xem h&ocirc;m nay</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; totalVisits++; // T&#259;ng t&#7893;ng truy c&#7853;p</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; pageViews++; // T&#259;ng t&#7893;ng l&#432;&#7907;t xem trang</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; // L&#432;u v&agrave;o localStorage</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; localStorage.setItem(&quot;viewsToday&quot;, viewsToday);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; localStorage.setItem(&quot;totalVisits&quot;, totalVisits);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; localStorage.setItem(&quot;pageViews&quot;, pageViews);</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; // C&#7853;p nh&#7853;t UI</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&quot;views-today&quot;).innerText = viewsToday;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&quot;total-visits&quot;).innerText = totalVisits;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&quot;page-views&quot;).innerText = pageViews;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; // G&#7885;i h&agrave;m c&#7853;p nh&#7853;t khi trang &#273;&#432;&#7907;c t&#7843;i</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; updatePageViews();</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; // Hi&#7875;n th&#7883; n&uacute;t quay l&#7841;i &#273;&#7847;u trang khi cu&#7897;n xu&#7889;ng</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; window.onscroll = function() {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; var btn = document.querySelector(&quot;.back-to-top&quot;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; if (document.documentElement.scrollTop &gt; 200) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; btn.style.display = &quot;block&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; } else {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; btn.style.display = &quot;none&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; };</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; // H&agrave;m cu&#7897;n l&ecirc;n &#273;&#7847;u trang</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; function scrollToTop() {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; window.scrollTo({top: 0, behavior: &#39;smooth&#39;});</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&lt;/script&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;/body&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;/html&gt;</span></p><p class="c0 c2"><span class="c1"></span></p></body></html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Ngang Đa Ngôn Ngữ</title>
+    <style>
+        /* Reset CSS cơ bản */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Thanh ngang trên cùng */
+        #top-bar {
+            background: white; /* Nền trắng */
+            color: black; /* Chữ màu đen */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between; /* Các phần tử cách đều nhau */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-bottom: 1px solid #ddd; /* Đường viền dưới */
+        }
+
+        /* Ngày tháng ở bên trái */
+        .topbar-date {
+            font-weight: bold;
+        }
+
+        /* Phần chọn ngôn ngữ */
+        .topbar-lang {
+            display: flex;
+            gap: 15px; /* Khoảng cách giữa các ngôn ngữ */
+        }
+
+        .topbar-lang a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+
+        .topbar-lang img {
+            width: 20px;
+            height: 14px;
+            margin-right: 8px; /* Khoảng cách giữa cờ và chữ */
+            border-radius: 2px;
+        }
+
+        .topbar-lang a:hover {
+            background: #f0f0f0; /* Hiệu ứng hover */
+        }
+
+        /* Phần nội dung trang */
+        .content {
+            padding: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Thanh ngang trên cùng -->
+    <div id="top-bar">
+        <!-- Ngày tháng -->
+        <div class="topbar-date" id="current-date">
+            <!-- Ngày tháng sẽ tự động cập nhật -->
+        </div>
+
+        <!-- Chọn ngôn ngữ -->
+        <div class="topbar-lang">
+            <a onclick="changeLanguage('vi')" id="lang-vi">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="VN">
+                <span id="text-vi">Tiếng Việt</span>
+            </a>
+            <a onclick="changeLanguage('en')" id="lang-en">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN">
+                <span id="text-en">English</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Nội dung trang -->
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dải nền kéo dài</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .full-width-section {
+            background-color: #2c3e50; /* Xanh tím than */
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            width: 100vw; /* Chiều rộng toàn màn hình */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="full-width-section">
+        <h1 id="heading" class="highlight">Chào mừng bạn đến với trang web của chúng tôi!</h1>
+        <p id="description" class="highlight">Đây là một trang web thử nghiệm giúp bạn đổi ngôn ngữ giữa Tiếng Việt và Tiếng Anh.</p>
+        <p id="more-info" class="highlight">Nhấn vào lá cờ để thay đổi ngôn ngữ hiển thị.</p>
+    </div>
+
+</body>
+
+    <!-- Script cập nhật ngày tháng & đổi ngôn ngữ -->
+    <script>
+        function updateDate(lang = 'vi') {
+            const dateElement = document.getElementById("current-date");
+            const today = new Date();
+
+            const optionsVI = { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' };
+            const optionsEN = { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' };
+
+            if (lang === 'en') {
+                const days = {
+                    "Chủ Nhật": "Sunday", "Thứ Hai": "Monday", "Thứ Ba": "Tuesday", "Thứ Tư": "Wednesday",
+                    "Thứ Năm": "Thursday", "Thứ Sáu": "Friday", "Thứ Bảy": "Saturday"
+                };
+
+                const months = {
+                    "Tháng Một": "January", "Tháng Hai": "February", "Tháng Ba": "March", "Tháng Tư": "April",
+                    "Tháng Năm": "May", "Tháng Sáu": "June", "Tháng Bảy": "July", "Tháng Tám": "August",
+                    "Tháng Chín": "September", "Tháng Mười": "October", "Tháng Mười Một": "November", "Tháng Mười Hai": "December"
+                };
+
+                let dateStr = today.toLocaleDateString('vi-VN', optionsVI);
+                Object.keys(days).forEach(vn => {
+                    dateStr = dateStr.replace(vn, days[vn]);
+                });
+                Object.keys(months).forEach(vn => {
+                    dateStr = dateStr.replace(vn, months[vn]);
+                });
+
+                dateElement.textContent = dateStr;
+            } else {
+                dateElement.textContent = today.toLocaleDateString('vi-VN', optionsVI);
+            }
+        }
+
+        updateDate(); // Gọi hàm cập nhật khi trang tải
+
+        const translations = {
+            vi: {
+                heading: "Chào mừng bạn đến với trang web của chúng tôi!",
+                description: "Đây là một trang web thử nghiệm giúp bạn đổi ngôn ngữ giữa Tiếng Việt và Tiếng Anh.",
+                moreInfo: "Nhấn vào lá cờ để thay đổi ngôn ngữ hiển thị.",
+                langVi: "Tiếng Việt",
+                langEn: "English"
+            },
+            en: {
+                heading: "Welcome to our website!",
+                description: "This is a demo website that allows you to switch between Vietnamese and English.",
+                moreInfo: "Click on the flag to change the display language.",
+                langVi: "Vietnamese",
+                langEn: "English"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.getElementById("heading").textContent = translations[lang].heading;
+            document.getElementById("description").textContent = translations[lang].description;
+            document.getElementById("more-info").textContent = translations[lang].moreInfo;
+            document.getElementById("text-vi").textContent = translations[lang].langVi;
+            document.getElementById("text-en").textContent = translations[lang].langEn;
+            updateDate(lang);
+        }
+    </script>
+
+</body>
+
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Thanh menu ngang */
+        .navbar {
+            background: black; /* Màu nền đen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            position: relative;
+            padding: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 12px 20px;
+            display: block;
+            font-size: 16px;
+            transition: 0.3s;
+            background: black;
+        }
+
+        .navbar ul li a:hover {
+            background: #0056b3; /* Màu xanh dương khi hover */
+        }
+
+        /* Dropdown menu (ẩn ban đầu) */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: black;
+            top: 50px; /* Hiện ngay dưới menu */
+            left: 0;
+            width: 200px;
+            z-index: 1000;
+            padding: 10px 0;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .dropdown li {
+            width: 100%;
+        }
+
+        .dropdown li a {
+            padding: 10px;
+            display: block;
+            background: black;
+            color: white;
+            text-align: left;
+        }
+
+        .dropdown li a:hover {
+            color: #ffcc00; /* Đổi màu chữ khi hover vào mục con */
+        }
+
+        /* Hiển thị menu con khi có class 'show' */
+        .dropdown.show {
+            display: block;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Thanh menu ngang -->
+    <nav class="navbar">
+        <ul>
+            <li onmouseenter="showMenu('menu1')" onmouseleave="hideMenu('menu1')">
+                <a href="#">BẠO LỰC MẠNG ▼</a>
+                <ul class="dropdown" id="menu1">
+                    <li><a href="#">Bóng tối mạng xã hội: Câu chuyện về bạo lực từ xa</a></li>
+                    <li><a href="#">Định nghĩa</a></li>
+                    <li><a href="#">Thống kê</a></li>
+                         </ul>
+            </li>
+            <li onmouseenter="showMenu('menu2')" onmouseleave="hideMenu('menu2')">
+                <a href="#">NGUYÊN NHÂN ▼</a>
+                <ul class="dropdown" id="menu2">
+                    <li><a href="#">Mặt Nạ Kẻ Tấn Công: Danh tính “anh hùng” bàn phím</a></li>
+                    <li><a href="#">Đặc điểm của mạng xã hội</a></li>
+                    <li><a href="#">Góc nhìn của “người qua đường”</a></li>
+                </ul>
+            </li>
+            <li onmouseenter="showMenu('menu3')" onmouseleave="hideMenu('menu3')">
+                <a href="#">HẬU QUẢ ▼</a>
+                <ul class="dropdown" id="menu3">
+                    <li><a href="#">Đối với nạn nhân</a></li>
+                    <li><a href="#">Đối với kẻ bắt nạt</a></li>
+                    <li><a href="#">Đối với xã hội</a></li>
+                </ul>
+            </li>
+<li onmouseenter="showMenu('menu4')" onmouseleave="hideMenu('menu4')">
+                <a href="#">GIẢI PHÁP ▼</a>
+                <ul class="dropdown" id="menu4">
+                    <li><a href="#">Giải pháp phòng tránh bạo lực mạng</a></li>
+                    <li><a href="#">Giải pháp khi bạo lực mạng xảy ra</a></li>
+                </ul>
+            </li>
+<li onmouseenter="showMenu('menu5')" onmouseleave="hideMenu('menu5')">
+                <a href="#">LỜI KẾT ▼</a>
+                <ul class="dropdown" id="menu5">
+                    <li><a href="#">Kết luận</a></li>
+                    <li><a href="#">Thông điệp</a></li>
+                </ul>
+            </li>
+    </nav>
+
+    <script>
+        function showMenu(menuId) {
+            document.getElementById(menuId).classList.add("show");
+        }
+
+        function hideMenu(menuId) {
+            document.getElementById(menuId).classList.remove("show");
+        }
+    </script>
+
+</body>
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Container chính để chia đôi */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            gap: 30px; /* Khoảng cách giữa 2 phần */
+            line-height: 1.8;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }    
+
+        /* Phần trái: Nội dung bạo lực mạng */
+        .section { margin-bottom: 20px; }
+        .baolucman { flex: 3; padding: 20px; }
+
+        /* Phần phải: Danh sách sự kiện */
+        .event-container {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-header {
+            font-size: 18px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        /* Dòng timeline bên trái */
+        .event-list {
+            border-left: 4px solid #ddd;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        /* Mỗi mục sự kiện */
+        .event-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        /* Chấm tròn đánh dấu */
+        .event-item::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: #ddd;
+            border-radius: 50%;
+            position: absolute;
+            left: -27px;
+            top: 5px;
+            transition: 0.3s;
+        }
+
+        /* Hiệu ứng khi di chuột vào chấm tròn */
+        .event-item:hover::before {
+            background: blue; /* Đổi màu sang xanh dương */
+        }
+
+        /* Ngày tháng */
+        .event-date {
+            font-size: 14px;
+            color: gray;
+            font-weight: bold;
+        }
+
+        /* Tiêu đề sự kiện */
+        .event-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 5px;
+            line-height: 1.4;
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        /* Hiệu ứng khi di chuột vào tiêu đề */
+        .event-title:hover {
+            color: red; /* Đổi màu sang đỏ */
+        }
+        
+    </style>
+</head>
+
+<div class="container">
+        <!-- Phần trái: Bạo Lực Mạng -->
+
+  <div class="baolucman">
+        <h2>Bóng Tối Mạng Xã Hội: Câu Chuyện Về Bạo Lực Từ Xa</h2>
+        <p>Vài năm về trước, câu chuyện đau lòng của <strong>Sulli</strong>, một trong những ngôi sao nổi bật của nhóm nhạc <strong>f(x)</strong>, là một minh chứng rõ ràng nhất cho sự tàn phá mà bạo lực mạng có thể mang lại. Dù được yêu mến vì tài năng và nhan sắc, <strong>Sulli (Choi Jin-ri)</strong> phải chịu đựng chỉ trích và chế giễu từ cộng đồng mạng vì cắt tóc ngắn, không trang điểm, hay thậm chí là việc đăng tải những bức ảnh và video tự do thể hiện bản thân.</p>
+        <p>Mặc dù đã lên tiếng kêu gọi sự thay đổi, Sulli vẫn bị cô lập, tuyệt vọng và cuối cùng đã chọn rời xa thế giới này. Có thể thấy, câu chuyện của Sulli là lời cảnh tỉnh về tác hại của thiếu kiểm soát trên mạng, nơi những ngôn từ có thể gây tổn thương sâu sắc đến trái tim, tâm hồn của một con người.</p>
+  </div>
+ 
+
+        <!-- Phần phải: Sự kiện -->
+        <div class="event-container">
+            <div class="event-header">SỰ KIỆN</div>
+            <div class="event-list">
+                <div class="event-item">
+                    <div class="event-date">Tháng Sáu 6, 2025</div>
+                    <a href="https://hoangthanhthanglong.vn/event1" class="event-title">Lễ Dâng Hương, Khai Xuân Ất Tỵ 2025 tại Hoàng Thành Thăng Long</a>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">Tháng Một 22, 2025</div>
+                    <a href="https://hoangthanhthanglong.vn/event2" class="event-title">Tái Hiện Nghi Lễ Cung Đình Xưa tại Hoàng Thành Thăng Long</a>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">Tháng Mười Hai 25, 2024</div>
+                    <a href="https://hoangthanhthanglong.vn/event3" class="event-title">Lễ Bàn Giao Đất Quốc Phòng, Kỳ Đài (Cột Cờ Hà Nội)</a>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+            margin: 0;
+        }
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(to right, #ffc0cb, #ffffff);
+            color: white;
+            padding: 20px 40px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            background-color: #ffffff;
+        }
+        .quote {
+            font-size: 22px;
+            font-weight: 600;
+            max-width: 250px;
+            color: #555;
+            border-left: 4px solid #ff6b6b;
+            padding-left: 10px;
+            flex: 2;
+            margin: auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .cta-button {
+            background: white;
+            color: #ff4b7b;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+            border: 2px solid white;
+        }
+        .cta-button:hover {
+            background: #ff4b7b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="quote">Hãy biến Internet trở thành nơi an toàn cho mọi người dùng!</div>
+        <a href="#" class="cta-button">Hành động ngay!</a>
+    </div>
+</body>
+
+<style>
+        /* Thiết lập chung cho footer */
+        .site-footer {
+            background-color: #2c2f34; /* Nền màu xám */
+            color: #ffffff; /* Màu chữ trắng */
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            width: 30%;
+            padding: 10px;
+            text-align: left;
+        }
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .footer-column p, .footer-column a {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            border-top: 1px solid #444;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Cột 1: Thông tin tổ chức -->
+        <div class="footer-column">
+            <h3>TRUNG TÂM BẢO TỒN DI SẢN THĂNG LONG – HÀ NỘI</h3>
+            <p>Quyết định thành lập số: 3855/QĐ-UBND ngày 01/9/2006 của Ủy ban Nhân dân Tp. Hà Nội</p>
+            <p>Địa chỉ: Số 19C đường Hoàng Diệu, P. Điện Biên Phủ, Q. Ba Đình, TP. Hà Nội</p>
+        </div>
+
+        <!-- Cột 2: Thông tin liên hệ -->
+        <div class="footer-column">
+            <h3>LIÊN HỆ</h3>
+            <p>📞 Liên hệ tham quan: <strong>+84-437345427</strong></p>
+            <p>📞 Đặt vé tour đêm: <strong>+84-848455222</strong></p>
+            <p>📠 Fax: +84-4-37345926</p>
+            <p>📩 Email: <a href="mailto:info@hoangthanhthanglong.vn">info@hoangthanhthanglong.vn</a></p>
+        </div>
+
+        <!-- Cột 3: Thống kê truy cập -->
+        <div class="footer-column">
+            <h3>THỐNG KÊ TRUY CẬP</h3>
+            <p>👁️ Lượt xem hôm nay: <strong id="views-today">0</strong></p>
+            <p>📊 Tổng truy cập: <strong id="total-visits">0</strong></p>
+            <p>👁️ Lượt xem trang: <strong id="page-views">0</strong></p>
+        </div>
+    </div>
+
+    <!-- Bản quyền -->
+    <div class="footer-bottom">
+        Bản quyền © 2025 HOANGTHANHTHANGLONG.VN thuộc Trung tâm Bảo tồn di sản Thăng Long - Hà Nội.
+    </div>
+</footer>
+
+<!-- Nút quay lại đầu trang -->
+<button class="back-to-top" onclick="scrollToTop()">▲ Lên đầu trang</button>
+
+<script>
+    function updatePageViews() {
+        let today = new Date().toDateString(); // Ngày hiện tại
+        let storedDate = localStorage.getItem("lastVisitDate"); // Lần truy cập cuối
+        let viewsToday = parseInt(localStorage.getItem("viewsToday")) || 0;
+        let totalVisits = parseInt(localStorage.getItem("totalVisits")) || 0;
+        let pageViews = parseInt(localStorage.getItem("pageViews")) || 0;
+
+        if (storedDate !== today) {
+            // Nếu ngày đã thay đổi, reset "Lượt xem hôm nay"
+            viewsToday = 0;
+            localStorage.setItem("lastVisitDate", today);
+        }
+
+        viewsToday++; // Tăng lượt xem hôm nay
+        totalVisits++; // Tăng tổng truy cập
+        pageViews++; // Tăng tổng lượt xem trang
+
+        // Lưu vào localStorage
+        localStorage.setItem("viewsToday", viewsToday);
+        localStorage.setItem("totalVisits", totalVisits);
+        localStorage.setItem("pageViews", pageViews);
+
+        // Cập nhật UI
+        document.getElementById("views-today").innerText = viewsToday;
+        document.getElementById("total-visits").innerText = totalVisits;
+        document.getElementById("page-views").innerText = pageViews;
+    }
+
+    // Gọi hàm cập nhật khi trang được tải
+    updatePageViews();
+
+    // Hiển thị nút quay lại đầu trang khi cuộn xuống
+    window.onscroll = function() {
+        var btn = document.querySelector(".back-to-top");
+        if (document.documentElement.scrollTop > 200) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+    // Hàm cuộn lên đầu trang
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+
+</body>
+
+</html>
